@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Three.js Scenes</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style>
+		.scene {
+			width: 50%;
+			height: 300px;
+			float: left;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="scene" id="scene1"></div>
+	<div class="scene" id="scene2"></div>
+    <label for="rotation-slider">Rotation:</label>
+    <input type="range" min="0" max="360" value="0" class="slider" id="rotation-slider">
+
+	<script src="scenes.js"></script>
+</body>
+</html>
